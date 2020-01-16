@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Predictions</h1>
+
+    <p class="lead">We can predict the final rankings of any league with a variety of methods.</p>
+     <form action="" method="POST" >
+       <form method="POST">
+        <select name = 'League'>
+              <option value="EPL">English Premier League</option>
+              <option value="bundes">BundesLiga</option>
+              <option value="liga">La Liga</option>
+              <option value="serie">Serie A</option>
+              <option value="ligue">Ligue 1</option>
+        </select>
+        <select name = 'Method'>
+          <option value="MDS">MDS</option>
+          <option value="CCA">CCA</option>
+          <option value="CDA">CDA</option>
+          <option value="Isomap">Isomap</option>
+        </select>
+
+<input id="my_submit" type="submit" value="GO">
+       </form>
+    </form>
+{% endblock %}
